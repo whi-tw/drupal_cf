@@ -1,0 +1,178 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f06037d2-6dae-450c-8fa1-ccdb069d9fe3
+  bundle: localgov_subsites_page
+  default_langcode: en
+  depends:
+    30f235fa-0119-4db9-afca-d8b7be0635c0: node
+    7b913fee-9b49-452b-930c-33e10ef608ac: media
+    99068425-f184-46ac-a121-624e51d7565b: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Cemeteries
+  created:
+    -
+      value: 1620141953
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /bereavement-services/cemeteries
+      langcode: en
+      pathauto: 1
+  localgov_subsites_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7b6f7c13-3eea-4b1d-88c9-f8eaea0f0c76
+          bundle: page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620141979
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: layout_onecol
+                  config:
+                    label: ''
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1a656eeb-ae1f-45fe-8d2b-07598da857f6
+          bundle: localgov_media_with_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620141997
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 7b6f7c13-3eea-4b1d-88c9-f8eaea0f0c76
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          revision_translation_affected:
+            -
+              value: true
+          localgov_heading_level:
+            -
+              value: h3
+          localgov_link:
+            -
+              target_uuid: 30f235fa-0119-4db9-afca-d8b7be0635c0
+              title: 'Read more about Scarfolk Crematorium'
+              options: {  }
+          localgov_media_item:
+            -
+              entity: 7b913fee-9b49-452b-930c-33e10ef608ac
+          localgov_media_position:
+            -
+              value: right
+          localgov_media_with_text_style:
+            -
+              value: default
+          localgov_opens_in_a_new_window:
+            -
+              value: false
+          localgov_text:
+            -
+              value: "<p>Scarfolk&nbsp;Crematorium is in&nbsp;Scarfolk Road Cemetery, it has 2 chapels, a garden of remembrance and a hall of remembrance.</p>\r\n"
+              format: wysiwyg
+          localgov_title:
+            -
+              value: 'Scarfolk Crematorium'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: f8d4af07-fe9d-472e-a6ed-decc3501d753
+          bundle: localgov_media_with_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620142122
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 7b6f7c13-3eea-4b1d-88c9-f8eaea0f0c76
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          revision_translation_affected:
+            -
+              value: true
+          localgov_heading_level:
+            -
+              value: h3
+          localgov_media_item:
+            -
+              entity: 7b913fee-9b49-452b-930c-33e10ef608ac
+          localgov_media_position:
+            -
+              value: left
+          localgov_media_with_text_style:
+            -
+              value: default
+          localgov_opens_in_a_new_window:
+            -
+              value: false
+          localgov_text:
+            -
+              value: "<p>This is a late Victorian cemetery, first opened in 1897. There are no new graves but reclaimed graves are available.</p>\r\n"
+              format: wysiwyg
+          localgov_title:
+            -
+              value: 'Scarfolk Road Cemetery'
+  localgov_subsites_parent:
+    -
+      entity: 99068425-f184-46ac-a121-624e51d7565b
+      weight: 0
+  localgov_subsites_summary:
+    -
+      value: 'We have 2 cemeteries, a memorial park and a crematorium with gardens of remembrance.'

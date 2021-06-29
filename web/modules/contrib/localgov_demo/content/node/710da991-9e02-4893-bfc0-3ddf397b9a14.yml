@@ -1,0 +1,220 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 710da991-9e02-4893-bfc0-3ddf397b9a14
+  bundle: localgov_subsites_page
+  default_langcode: en
+  depends:
+    7b913fee-9b49-452b-930c-33e10ef608ac: media
+    99068425-f184-46ac-a121-624e51d7565b: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Choosing a memorial'
+  created:
+    -
+      value: 1620141494
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /bereavement-services/choosing-memorial
+      langcode: en
+      pathauto: 1
+  localgov_subsites_banner:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a2ae93d5-a270-4f53-9d43-071556c70d26
+          bundle: localgov_banner_secondary
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620142440
+          behavior_settings:
+            -
+              value: {  }
+          localgov_image:
+            -
+              entity: 7b913fee-9b49-452b-930c-33e10ef608ac
+  localgov_subsites_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 0af5b32d-203d-4ae1-bb77-7e5427629773
+          bundle: page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620141582
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: layout_onecol
+                  config:
+                    label: ''
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 6cfd9b4c-7502-41e9-8193-d4755ed95615
+          bundle: localgov_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620141601
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 0af5b32d-203d-4ae1-bb77-7e5427629773
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          localgov_text:
+            -
+              value: "<h3>Crematorium memorial options</h3>\r\n\r\n<p>You can choose from a range different memorials – for example:</p>\r\n\r\n<ul>\r\n\t<li>a book of remembrance</li>\r\n\t<li>a wooden bench</li>\r\n\t<li>memorials tree and shrubs</li>\r\n\t<li>Yorkstone paving</li>\r\n</ul>\r\n\r\n<p>For more information on these memorials and other options, visit&nbsp;our&nbsp;<a href=\"/\">guide for&nbsp;brochures and pricing.</a></p>\r\n\r\n<h3>&nbsp;</h3>\r\n"
+              format: wysiwyg
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 9e65c50f-5cfc-455e-9328-b18e9f4902c8
+          bundle: localgov_accordion
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620397621
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 0af5b32d-203d-4ae1-bb77-7e5427629773
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          revision_translation_affected:
+            -
+              value: true
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 3d13da41-fe54-4778-a53f-dca3e35a45c4
+                  bundle: localgov_accordion_pane
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1620397621
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  localgov_body_text:
+                    -
+                      value: "<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>\r\n\r\n<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>\r\n"
+                      format: wysiwyg
+                  localgov_heading_level:
+                    -
+                      value: h3
+                  localgov_title:
+                    -
+                      value: 'This is accordion which would contain some more details'
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: e50ae943-8d24-4d15-a40c-a2d4f8ac31cd
+                  bundle: localgov_accordion_pane
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1620397664
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  localgov_body_text:
+                    -
+                      value: "<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>\r\n\r\n<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>\r\n"
+                      format: wysiwyg
+                  localgov_heading_level:
+                    -
+                      value: h3
+                  localgov_title:
+                    -
+                      value: 'This is another accordion which would contain some more details'
+          localgov_title:
+            -
+              value: 'This is a test accordion on a subsite page'
+  localgov_subsites_parent:
+    -
+      entity: 99068425-f184-46ac-a121-624e51d7565b
+      weight: 0
+  localgov_subsites_summary:
+    -
+      value: "We have a range of memorial options for your loved ones.\r\n\r\n"

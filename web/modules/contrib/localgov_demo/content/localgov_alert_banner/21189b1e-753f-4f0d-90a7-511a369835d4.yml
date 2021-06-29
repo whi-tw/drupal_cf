@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_alert_banner
+  uuid: 21189b1e-753f-4f0d-90a7-511a369835d4
+  bundle: localgov_alert_banner
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: false
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'An announcement with a title and link'
+  display_title:
+    -
+      value: true
+  remove_hide_link:
+    -
+      value: false
+  created:
+    -
+      value: 1620647151
+  revision_translation_affected:
+    -
+      value: true
+  token:
+    -
+      value: alert-6--603960a04fc194376a47505781dbd365a0df4994
+  link:
+    -
+      uri: 'https://localgovdrupal.org/'
+      title: 'Read more in the docs'
+      options: {  }
+  short_description:
+    -
+      value: "<p><br />\r\nVivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada.</p>\r\n\r\n<p>Donec sollicitudin molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero malesuada feugiat.</p>\r\n"
+      format: wysiwyg
+  type_of_alert:
+    -
+      value: 00--announcement

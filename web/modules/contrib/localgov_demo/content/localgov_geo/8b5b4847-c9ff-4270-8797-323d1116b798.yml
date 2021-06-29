@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_geo
+  uuid: 8b5b4847-c9ff-4270-8797-323d1116b798
+  bundle: address
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1620225887
+  revision_translation_affected:
+    -
+      value: true
+  location:
+    -
+      value: 'POINT (-0.013526 51.591196)'
+      geo_type: Point
+      lat: 51.591196
+      lon: -0.013526
+      left: -0.013526
+      top: 51.591196
+      right: -0.013526
+      bottom: 51.591196
+      geohash: gcpvrxyhkzfr
+      latlon: '51.591196,-0.013526'
+  postal_address:
+    -
+      langcode: ''
+      country_code: GB
+      administrative_area: ''
+      locality: London
+      dependent_locality: ''
+      postal_code: 'E17 4JF'
+      sorting_code: ''
+      address_line1: 'Forest Road'
+      address_line2: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''

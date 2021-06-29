@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3266e45f-1489-4b88-8d8a-98b25e0ed143
+  bundle: localgov_services_landing
+  default_langcode: en
+  depends:
+    5eb1f39a-1740-44c9-bc71-8f0ba897d761: user
+    2b336282-d1d7-4c69-b2d6-65cbb2f363eb: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: 5eb1f39a-1740-44c9-bc71-8f0ba897d761
+  title:
+    -
+      value: 'Libraries, leisure and culture'
+  created:
+    -
+      value: 1620222074
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /libraries-leisure-and-culture
+      langcode: en
+      pathauto: 1
+  body:
+    -
+      value: "<p>Libraries, parks and open spaces, sports and physical activities, arts, entertainment and culture.</p>\r\n"
+      format: wysiwyg
+      summary: 'Libraries, parks and open spaces, sports and physical activities, arts, entertainment and culture.'
+  localgov_destinations:
+    -
+      entity: 2b336282-d1d7-4c69-b2d6-65cbb2f363eb

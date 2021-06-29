@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_alert_banner
+  uuid: a90421c8-4b58-4dd5-b1ce-bde5040590a0
+  bundle: localgov_alert_banner
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: false
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Lorem ipsum '
+  display_title:
+    -
+      value: true
+  remove_hide_link:
+    -
+      value: false
+  created:
+    -
+      value: 1619702981
+  revision_translation_affected:
+    -
+      value: true
+  token:
+    -
+      value: alert-1--c881287629355b208fc1cdfbf62071f6d8dfa8ed
+  link:
+    -
+      uri: 'https://localgovdrupal.org/'
+      title: 'Find out more'
+      options: {  }
+  short_description:
+    -
+      value: "<p>Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat.&nbsp;</p>\r\n"
+      format: wysiwyg
+  type_of_alert:
+    -
+      value: 20--minor

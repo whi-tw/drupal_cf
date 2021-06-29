@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_alert_banner
+  uuid: e827f5ba-2787-4d24-a55a-cdd883110a4a
+  bundle: localgov_alert_banner
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: false
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'An emergency alert'
+  display_title:
+    -
+      value: true
+  remove_hide_link:
+    -
+      value: false
+  created:
+    -
+      value: 1620647242
+  revision_translation_affected:
+    -
+      value: true
+  token:
+    -
+      value: alert-8--0447ebff1d6950d0ae6840fef53a2888dd618faa
+  link:
+    -
+      uri: 'https://localgovdrupal.org/'
+      title: 'Find out more'
+      options: {  }
+  short_description:
+    -
+      value: "<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>\r\n"
+      format: wysiwyg
+  type_of_alert:
+    -
+      value: 50--major

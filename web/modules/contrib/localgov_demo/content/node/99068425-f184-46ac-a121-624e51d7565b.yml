@@ -1,0 +1,214 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 99068425-f184-46ac-a121-624e51d7565b
+  bundle: localgov_subsites_overview
+  default_langcode: en
+  depends:
+    7b913fee-9b49-452b-930c-33e10ef608ac: media
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Bereavement services'
+  created:
+    -
+      value: 1619778966
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /bereavement-services
+      langcode: en
+      pathauto: 1
+  localgov_subsites_banner:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 78491805-6ddb-48a4-b0f4-80e533ef8d7a
+          bundle: localgov_banner_primary
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1619779109
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_image:
+            -
+              entity: 7b913fee-9b49-452b-930c-33e10ef608ac
+          localgov_subsites_banner_text:
+            -
+              value: 'Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
+          localgov_title:
+            -
+              value: 'Bereavement services'
+          localgov_url:
+            -
+              value: 'https://localgovdrupal.org/'
+  localgov_subsites_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2d309356-b4df-4950-94b6-c1dd182fe195
+          bundle: page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1619779501
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: layout_onecol
+                  config:
+                    label: ''
+          revision_translation_affected:
+            -
+              value: true
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e441b106-a4a5-4a19-87d1-ec758905ebd2
+          bundle: localgov_call_out_box
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1619779529
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: 2d309356-b4df-4950-94b6-c1dd182fe195
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          revision_translation_affected:
+            -
+              value: true
+          localgov_body_text:
+            -
+              value: "<p>We provide burial, cremation and commemoration services that offer choice and high quality,&nbsp; which are sensitive, accessible, and fair to the whole community.</p>\r\n\r\n<p>We have 2 cemeteries, a memorial park and a crematorium with gardens of remembrance.</p>\r\n"
+              format: wysiwyg
+          localgov_button:
+            -
+              uri: 'internal:/'
+              title: 'contact us'
+              options: {  }
+          localgov_colour_theme:
+            -
+              value: default
+          localgov_header_text:
+            -
+              value: 'Bereavement services'
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_opens_in_a_new_window:
+            -
+              value: false
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1036bbc9-0dbc-45e9-8fbc-7350412c569b
+          bundle: localgov_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1619779054
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: ''
+                  config: {  }
+          revision_translation_affected:
+            -
+              value: true
+          localgov_text:
+            -
+              value: "<h2>Cremation services</h2>\r\n\r\n<p>Find out about cremation services in Scarfolk Crematorium, such as our chapels, what happens during a cremation ceremony and placing the cremated remains.</p>\r\n\r\n<p>Read our guide on&nbsp;cremation services.</p>\r\n\r\n<h3>Burial services</h3>\r\n\r\n<p>Find out about burial services in Scarfolk , such as purchasing and reclaiming graves, burial ceremonies and unpurchased graves.</p>\r\n\r\n<p>Read our guide on burial services.</p>\r\n\r\n<h3>Memorial options</h3>\r\n\r\n<p>Find out which memorial options are available at Scarfolk Crematorium.</p>\r\n\r\n<p><a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"710da991-9e02-4893-bfc0-3ddf397b9a14\" href=\"/node/29\">Explore the different memorial options.</a></p>\r\n\r\n<h3>Cemeteries</h3>\r\n\r\n<p>We have 2 cemeteries, a memorial park and a crematorium with gardens of remembrance.</p>\r\n\r\n<p>Read our guide on cemetery options in Scarfolk .</p>\r\n\r\n<h3>Public mortuary</h3>\r\n\r\n<p>The service is run under the jurisdiction of HM Coroner and we handle deaths that have been referred to the coroner or where a death certificate cannot be issued.</p>\r\n\r\n<p>Contact the public mortuary.</p>\r\n"
+              format: wysiwyg
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 5af348c5-f664-4c54-aa85-c056611c8ba9
+          bundle: page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1619779030
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: layout_onecol
+                  config:
+                    label: ''
+          revision_translation_affected:
+            -
+              value: true
+  localgov_subsites_hide_menu:
+    -
+      value: false
+  localgov_subsites_theme:
+    -
+      value: theme_a

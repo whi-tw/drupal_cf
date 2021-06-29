@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_alert_banner
+  uuid: c894eff1-e55b-443c-b66c-fae9e764ac09
+  bundle: localgov_alert_banner
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: false
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'This is a minor announcement (without title)'
+  display_title:
+    -
+      value: false
+  remove_hide_link:
+    -
+      value: false
+  created:
+    -
+      value: 1620647059
+  revision_translation_affected:
+    -
+      value: true
+  token:
+    -
+      value: alert-5--6063796961c8888493531583ea01d20d4ff13901
+  link:
+    -
+      uri: 'https://localgovdrupal.org/'
+      title: ''
+      options: {  }
+  short_description:
+    -
+      value: "<p>Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit.</p>\r\n"
+      format: wysiwyg
+  type_of_alert:
+    -
+      value: 00--announcement

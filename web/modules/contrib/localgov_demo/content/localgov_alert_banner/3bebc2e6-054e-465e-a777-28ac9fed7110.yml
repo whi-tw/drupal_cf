@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_alert_banner
+  uuid: 3bebc2e6-054e-465e-a777-28ac9fed7110
+  bundle: localgov_alert_banner
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'William McGonagall (1825 – 1902)'
+  display_title:
+    -
+      value: true
+  remove_hide_link:
+    -
+      value: false
+  created:
+    -
+      value: 1620321444
+  revision_translation_affected:
+    -
+      value: true
+  token:
+    -
+      value: alert-4--2f33d0816d8d85c3c2818de20632c729e7b51195
+  link:
+    -
+      uri: 'https://en.wikipedia.org/wiki/William_McGonagall'
+      title: 'William McGonagall'
+      options: {  }
+  short_description:
+    -
+      value: "<p>Therefore a monument should be erected for him most handsome to behold,<br />\r\nAnd his good deeds engraven thereon in letters of gold.</p>\r\n"
+      format: wysiwyg
+  type_of_alert:
+    -
+      value: 90--notable-person

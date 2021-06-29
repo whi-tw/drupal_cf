@@ -1,0 +1,142 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 30f235fa-0119-4db9-afca-d8b7be0635c0
+  bundle: localgov_subsites_page
+  default_langcode: en
+  depends:
+    7b913fee-9b49-452b-930c-33e10ef608ac: media
+    99068425-f184-46ac-a121-624e51d7565b: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Scarfolk Crematorium'
+  created:
+    -
+      value: 1620142190
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /bereavement-services/scarfolk-crematorium
+      langcode: en
+      pathauto: 1
+  localgov_subsites_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: be841354-5f05-4f19-9685-ce0d2c5e3937
+          bundle: page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620142234
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: layout_onecol
+                  config:
+                    label: ''
+          revision_translation_affected:
+            -
+              value: true
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 566c09e8-cd41-4fea-bce5-8f0cda763845
+          bundle: localgov_text
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620142252
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: be841354-5f05-4f19-9685-ce0d2c5e3937
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          revision_translation_affected:
+            -
+              value: true
+          localgov_text:
+            -
+              value: "<h3>Services</h3>\r\n\r\n<p>Services are at 45 minute intervals. Extra time can be booked for extended services or to accommodate large congregations. Both chapels can play recorded music and have organs, but we do not supply organists.</p>\r\n\r\n<h3>East chapel</h3>\r\n\r\n<p>The east chapel has a modern design, with upholstered linked seating, allowing flexibility and seating for about 130 people. The catafalque has double curtains, net and velvet, that can be drawn to fully or partially obscure the coffin at committal.</p>\r\n\r\n<h3>West chapel</h3>\r\n\r\n<p>The west chapel has a traditional design, with a vaulted ceiling and&nbsp;wooden pews. The catafalque descends upon committal, unless you prefer the coffin to remain. There is seating for about 80 people.</p>\r\n\r\n<h3>Cremation services</h3>\r\n\r\n<p>Read our guide to&nbsp;cremation services.</p>\r\n\r\n<h3>After the service</h3>\r\n\r\n<p>After the service the remains can be scattered in our gardens of remembrance or buried in a cremation plot in one of our&nbsp;<a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"f06037d2-6dae-450c-8fa1-ccdb069d9fe3\" href=\"/node/30\" title=\"Cemeteries\">cemeteries</a>. You can have a memorial in our hall or gardens of remembrance, even if you did not have your ceremony at the crematorium.</p>\r\n\r\n<h3>Memorial options</h3>\r\n\r\n<p>There is a wide variety of&nbsp;<a data-entity-substitution=\"canonical\" data-entity-type=\"node\" data-entity-uuid=\"710da991-9e02-4893-bfc0-3ddf397b9a14\" href=\"/node/29\" title=\"Crematorium memorial options\">memorial options</a>&nbsp;at Scarfolk Crematorium.</p>\r\n\r\n<h3>Opening times</h3>\r\n\r\n<p>Monday to Friday, 9am to 4pm</p>\r\n\r\n<p>Saturday, 9.30am to 11.45pm</p>\r\n\r\n<h4>Crematorium grounds</h4>\r\n\r\n<p>Every day, 8am to 5pm.&nbsp;</p>\r\n"
+              format: wysiwyg
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 35ef321e-815e-4344-b4d7-68e45e29bbd4
+          bundle: localgov_image
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620142337
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: be841354-5f05-4f19-9685-ce0d2c5e3937
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          revision_translation_affected:
+            -
+              value: true
+          localgov_caption:
+            -
+              value: "<p>This is a caption</p>\r\n"
+              format: wysiwyg
+          localgov_image:
+            -
+              entity: 7b913fee-9b49-452b-930c-33e10ef608ac
+  localgov_subsites_parent:
+    -
+      entity: 99068425-f184-46ac-a121-624e51d7565b
+      weight: 0
+  localgov_subsites_summary:
+    -
+      value: "Croydon Crematorium is in Scarfolk Road Cemetery, with entrances on Scarfolk Road and Thother Road. It has 2 chapels, a garden of remembrance and a hall of remembrance.\r\n\r\n"

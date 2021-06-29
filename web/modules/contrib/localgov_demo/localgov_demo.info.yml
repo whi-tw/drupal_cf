@@ -1,0 +1,115 @@
+name: LocalGov Demo Content
+description: Example content for demonstrating the LocalGov Drupal distribution and to help with development.
+core_version_requirement: ^8.9 || ^9
+type: module
+package: LocalGov Drupal
+
+dependencies:
+  - default_content:default_content
+  - localgov_subsites:localgov_subsites
+  - localgov_core:localgov_media
+  - localgov_guides:localgov_guides
+  - localgov_services:localgov_services_landing
+  - localgov_services:localgov_services_page
+  - localgov_services:localgov_services_status
+  - localgov_services:localgov_services_sublanding
+  - localgov_step_by_step:localgov_step_by_step
+  - localgov_subsites:localgov_subsites
+  - localgov_alert_banner:localgov_alert_banner
+  - localgov_directories:localgov_directories
+  - localgov_directories:localgov_directories_location
+  - localgov_directories:localgov_directories_page
+  - localgov_directories:localgov_directories_venue
+  - localgov_events:localgov_events
+
+
+default_content:
+  node:
+    - c1d9f01d-c368-4db3-a4ec-c882d217781b
+    - 57b46ceb-20d3-45cc-9f9b-2bf2a6561c78
+    - 1c9e5aaf-5ff8-4f96-9c6b-5d8626069a42
+    - 0f29853b-19d5-4379-809f-ff9adbecb98a
+    - ad1ccdcc-6094-4b76-b5c7-fabca435f3b0
+    - 57297753-c989-4358-8133-d5a8ba197544
+    - ad1ccdcc-6094-4b76-b5c7-fabca435f3b0
+    - 1633301d-071e-4ef3-83ac-2c01bf18f530
+    - 638fe726-4b86-48e5-8d0c-fb24f83bfa5b
+    - 8d774d57-90ee-44bf-82d0-1f468010bbf0
+    - a9c79fda-ad57-4e77-b95a-dd40f6ea9f23
+    - b5ae14ea-a370-41ac-b631-d081bbb888fd
+    - ce3110d2-90f6-45dc-b202-ad8f3df9e5a2
+    - de0fe92e-107e-4db4-a041-b6d648ff642c
+    - f8066c54-cdd4-42c5-bf25-8720757c410b
+    - 5963812c-9e71-4be0-9067-59125da10a71
+    - 5f46013c-8afd-4304-b073-2a7d12a89ec0
+    - 75aa141a-7e15-4d97-be6b-42372299ba4c
+    - 7ca88e56-8a8b-44ae-9fa0-f75df0533189
+    - 968ae2b4-a5f3-4f6a-bb83-376a819a77e0
+    - 98be264b-c321-44e9-8ac2-5564d337f198
+    - 9cd20a2e-0486-4f89-a4c5-584bbc9e1b47
+    - b54c3592-47d9-455f-8371-7f592a0a9479
+    - c280ea14-a864-4246-b9df-211cdf7f4a46
+    - c640601c-541c-46a9-9790-cf088af93ce0
+    - c89123ee-a53f-4470-a384-085c596e157b
+    - e7734a03-c2d5-4fa3-92b8-a945b8388b38
+    - 23deec1f-26e7-4fc1-b869-38b856ec4d48
+    - 2d1b8bbe-0e88-478b-868f-caf94aa9b70d
+    - 450e542f-21d7-43f6-a065-578b7a69b4d8
+    - 59fb2bff-97fd-460b-b653-083420c3a86d
+    - 69297010-e255-4192-9bd9-b5b550098b10
+    - 6b8052f8-5db6-4a63-8498-d440092f2079
+    - ab6aecc5-c49c-4958-9690-7b7cf8ffaf3e
+    - e3aafe22-3b56-4bf9-afd8-3dda0ae16213
+    - f6e20e37-22ea-44bd-8e69-ae8923d78b12
+    - a65a3e24-45cc-40b0-b305-20e3d265bc10
+    - a6abc378-3a60-4d97-a52e-ab796461e053
+    - 060c14b0-995e-4fb2-9131-64e0b02716e6
+    - 1d918fcc-955d-4e43-b7fa-05e9493afd46
+    - 43f80a47-8923-4b00-86a2-b1b8705fe7c6
+    - 54e383f8-8ae7-4bd2-bfeb-1c412fc6fb9b
+    - 5fad73db-7b5b-424e-b9f6-a558c0493a33
+    - 9ac6d587-6533-4374-ae86-358bdd145541
+    - 99068425-f184-46ac-a121-624e51d7565b
+    - 30f235fa-0119-4db9-afca-d8b7be0635c0
+    - 710da991-9e02-4893-bfc0-3ddf397b9a14
+    - f06037d2-6dae-450c-8fa1-ccdb069d9fe3
+    - 2b336282-d1d7-4c69-b2d6-65cbb2f363eb
+    - 3266e45f-1489-4b88-8d8a-98b25e0ed143
+    - 7c3be0a3-c5b6-4f24-8663-17356d86dd31
+    - 3a3e01c0-9cff-4c23-8294-816416b5e2b7
+    - 875cf69d-db26-4452-8f49-25e4d19bcbcf
+    - 8eb90b8f-4dcc-457c-9bea-abe86cb69b6b
+    - 5f88c33c-6ffe-4afc-8a66-cd1651b212de
+    - 30a6a88f-33de-4637-899a-1c2289da705d
+    - d5eb90b9-1b16-4752-95e1-669e60a55b95
+    - f572aa28-83b3-4a5f-b49a-db0f5f527f3a
+    - 4e6bd794-edfc-4c26-a0c2-c99fb3dd2afd
+    - 36f15c0d-bdb2-439f-b808-ae3292a72e6a
+    - 7acd885a-da61-438d-b60f-1028fab696a6
+    - 8257ecb5-cb03-4dc1-90bd-1606effee5ca
+    - 83ca207c-2531-4fd2-a3d4-67f4b6c1a0e0
+    - 853759e6-e674-47ee-ae6d-ae70621dee1b
+    - 995707e9-6f47-436f-b3e1-6adbd415faf2
+    - a0452562-9d4e-46e0-945b-5499625d8043
+    - acdeb4ee-eccf-4e59-ae88-e73be24c8821
+    - c05a7f66-ffd8-4181-9129-1b1bc7f03b42
+    - c45369ff-7dac-4324-bbe0-44b4341593e0
+    - d0ae89f0-5d25-4f44-a60f-4c7ace53e003
+    - e5749f20-9623-42d9-a7d5-cb2e287aa6a5
+    - edede872-d59c-4e65-940d-5b3067d7b88b
+    - d77c62b5-80c9-401f-92aa-066bb535911f
+    - 10926e58-2b95-41eb-9e64-c1730f631412
+
+  taxonomy_term:
+    - acfb5e02-f92b-4822-9f09-d5802314dd52
+    - df8a65ea-700c-4820-b12b-c81ccac0dd6c
+    - 3c65edbc-39b6-48c2-8f86-216bd29404e1
+
+  localgov_alert_banner:
+    - 3bebc2e6-054e-465e-a777-28ac9fed7110
+    - a90421c8-4b58-4dd5-b1ce-bde5040590a0
+    - eee8bba0-b771-4224-9ee7-f94b211633b4
+    - 21189b1e-753f-4f0d-90a7-511a369835d4
+    - 71ca557f-4daf-42bd-9a59-42a48dee87f5
+    - c894eff1-e55b-443c-b66c-fae9e764ac09
+    - e827f5ba-2787-4d24-a55a-cdd883110a4a

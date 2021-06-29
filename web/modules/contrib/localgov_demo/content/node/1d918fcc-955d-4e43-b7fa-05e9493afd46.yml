@@ -1,0 +1,174 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1d918fcc-955d-4e43-b7fa-05e9493afd46
+  bundle: localgov_subsites_page
+  default_langcode: en
+  depends:
+    cfd479d7-f736-4d08-a65a-c3a49b269e6a: media
+    d2af8444-4898-4daf-9814-6dc0c16cfb26: media
+    a6abc378-3a60-4d97-a52e-ab796461e053: node
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'A video page, with a key contact'
+  created:
+    -
+      value: 1620399961
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /test-subsite-demo-all-components/video-page-key-contact
+      langcode: en
+      pathauto: 1
+  localgov_subsites_content:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: a058e8b5-c8f0-40c9-bbe2-557e958b59cb
+          bundle: page_section
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620399980
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: ''
+                  parent_uuid: ''
+                  layout: layout_onecol
+                  config:
+                    label: ''
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 47042365-af9b-4466-9724-d16e9fc9209b
+          bundle: localgov_video
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620399991
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: a058e8b5-c8f0-40c9-bbe2-557e958b59cb
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          localgov_video:
+            -
+              entity: cfd479d7-f736-4d08-a65a-c3a49b269e6a
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 17f9f5b3-881e-4c47-9b6c-239d75518e1c
+          bundle: localgov_key_contacts
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1620405566
+          behavior_settings:
+            -
+              value:
+                layout_paragraphs:
+                  region: content
+                  parent_uuid: a058e8b5-c8f0-40c9-bbe2-557e958b59cb
+                  layout: ''
+                  config: {  }
+                  parent_delta: 0
+          revision_translation_affected:
+            -
+              value: true
+          localgov_heading_level:
+            -
+              value: h2
+          localgov_paragraphs:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: f8cea3d7-55b9-4714-9031-81202f37fe07
+                  bundle: localgov_key_contact_item
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1620405566
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  localgov_colour_theme:
+                    -
+                      value: default
+                  localgov_contact_email:
+                    -
+                      value: example@example.com
+                  localgov_heading_level:
+                    -
+                      value: h3
+                  localgov_image:
+                    -
+                      entity: d2af8444-4898-4daf-9814-6dc0c16cfb26
+                  localgov_link:
+                    -
+                      uri: 'https://localgovdrupal.org/'
+                      title: 'The LGD documentation site'
+                      options: {  }
+                  localgov_title:
+                    -
+                      value: 'Your example key contact'
+          localgov_title:
+            -
+              value: 'This is a key contact component'
+  localgov_subsites_parent:
+    -
+      entity: a6abc378-3a60-4d97-a52e-ab796461e053
+      weight: 0

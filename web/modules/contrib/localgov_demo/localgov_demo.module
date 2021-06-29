@@ -1,0 +1,112 @@
+<?php
+
+/**
+ * @file
+ * LocalGovDrupal demo module file.
+ */
+
+use Drupal\Core\Serialization\Yaml;
+
+/**
+ * Implements hook_modules_installed().
+ *
+ * Fix entity reference fields in default content.
+ *
+ * @see https://github.com/localgovdrupal/localgov_demo/issues/2
+ */
+function localgov_demo_modules_installed($modules, $is_syncing) {
+  if (!$is_syncing &&
+    in_array('default_content', $modules) &&
+    in_array('localgov_demo', $modules)
+  ) {
+
+    // Entity reference fields to fix.
+    $fix_fields = [
+      'localgov_services_parent',
+      'localgov_guides_parent',
+      'localgov_step_parent',
+    ];
+
+    $entity_repo = \Drupal::service('entity.repository');
+
+    // Iterate over all default node content.
+    $dir = drupal_get_path('module', 'localgov_demo') . "/content/node";
+    foreach (glob($dir . "/*.yml") as $filename) {
+
+      // Load serialized content.
+      $contents = file_get_contents($filename);
+      $decoded = Yaml::decode($contents);
+
+      // Get the current node id.
+      $uuid_current_node = $decoded['_meta']['uuid'];
+      $current_node = $entity_repo->loadEntityByUuid('node', $uuid_current_node);
+
+      // Iterate over all field.
+      foreach ($decoded['default'] as $field_name => $field) {
+
+        // Update entity reference fields.
+        if (in_array($field_name, $fix_fields)) {
+          // Grab the uuid of the target node.
+          $uuid_target_node = $field[0]['entity'];
+          if ($uuid_target_node && $parent = $entity_repo->loadEntityByUuid('node', $uuid_target_node)) {
+            if ($current_node) {
+              $current_node->set($field_name, ['target_id' => $parent->id()]);
+              $current_node->save();
+            }
+          }
+        }
+
+        // Fix topic list builder links.
+        if ($field_name == 'localgov_topics') {
+          foreach ($field as $topic) {
+            if (isset($topic['entity']['default']['topic_list_links']) && count($topic['entity']['default']['topic_list_links']) > 0) {
+              $topic_uuid = $topic['entity']['_meta']['uuid'];
+              $topic_paragraph = $entity_repo->loadEntityByUuid('paragraph', $topic_uuid);
+
+              // Convert link UUID to node ID.
+              $links = [];
+              foreach ($topic['entity']['default']['topic_list_links'] as $link) {
+                if (isset($link['target_uuid'])) {
+                  $link_target = $entity_repo->loadEntityByUuid('node', $link['target_uuid']);
+                  $link['uri'] = 'entity:node/' . $link_target->id();
+                }
+                $links[] = $link;
+              }
+
+              // Replace topic links with those defined in default content.
+              $topic_paragraph->set('topic_list_links', $topic['entity']['default']['topic_list_links']);
+              $topic_paragraph->save();
+            }
+          }
+        }
+
+        // Fix tasks button links.
+        if ($field_name == 'localgov_common_tasks') {
+
+          // Convert link UUID to node ID.
+          $links = [];
+          foreach ($field as $link) {
+            if (isset($link['target_uuid'])) {
+              $link_target = $entity_repo->loadEntityByUuid('node', $link['target_uuid']);
+              $link['uri'] = 'entity:node/' . $link_target->id();
+            }
+            $links[] = $link;
+          }
+
+          // Replace button links with those defined in default content.
+          $current_node->set('localgov_common_tasks', $links);
+          $current_node->save();
+        }
+      }
+    }
+
+    // Regenerate all path aliases.
+    // This needs to happen after entity reference fixes.
+    $nids = \Drupal::entityTypeManager()->getStorage('node')->getQuery()->execute();
+    $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($nids);
+    foreach ($nodes as $node) {
+      \Drupal::service('pathauto.generator')->updateEntityAlias($node, 'update');
+    }
+
+  }
+}

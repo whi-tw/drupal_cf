@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_geo
+  uuid: c065a456-0319-45e6-b671-b4465345383f
+  bundle: address
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1620224565
+  revision_translation_affected:
+    -
+      value: true
+  location:
+    -
+      value: 'POINT (-0.140671 50.82066)'
+      geo_type: Point
+      lat: 50.82066
+      lon: -0.140671
+      left: -0.140671
+      top: 50.82066
+      right: -0.140671
+      bottom: 50.82066
+      geohash: gcpchg9ef1sj
+      latlon: '50.82066,-0.140671'
+  postal_address:
+    -
+      langcode: ''
+      country_code: GB
+      administrative_area: England
+      locality: Brighton
+      dependent_locality: ''
+      postal_code: 'BN1 1JS'
+      sorting_code: ''
+      address_line1: 'Bartholomew Square'
+      address_line2: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''

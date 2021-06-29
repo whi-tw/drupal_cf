@@ -1,0 +1,46 @@
+_meta:
+  version: '1.0'
+  entity_type: localgov_geo
+  uuid: 7bc9a809-fccc-4f33-9462-223bcc7931b6
+  bundle: address
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1620224192
+  revision_translation_affected:
+    -
+      value: true
+  location:
+    -
+      value: 'POINT (-0.098675 51.37131)'
+      geo_type: Point
+      lat: 51.37131
+      lon: -0.098675
+      left: -0.098675
+      top: 51.37131
+      right: -0.098675
+      bottom: 51.37131
+      geohash: gcpujzb5sdq8
+      latlon: '51.37131,-0.098675'
+  postal_address:
+    -
+      langcode: ''
+      country_code: GB
+      administrative_area: England
+      locality: London
+      dependent_locality: ''
+      postal_code: 'CR0 1EA'
+      sorting_code: ''
+      address_line1: 'Mint Walk 8'
+      address_line2: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
