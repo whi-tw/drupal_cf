@@ -16,6 +16,9 @@
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
+        "drupal/elasticsearch_connector": "^7.0@alpha",
+        "drupal/redis": "^1.5",
+        "drupal/s3fs_cors": "^1.0@RC",
         "localgovdrupal/localgov": "^2.0"
     },
     "require-dev": {
@@ -48,7 +51,7 @@
                 "[web-root]/sites/default/settings.php": {
                     "mode": "replace",
                     "path": "assets/composer/settings.php",
-                    "overwrite": false
+                    "overwrite": true
                 },
                 "[web-root]/sites/default/settings.lando.php": {
                     "mode": "replace",

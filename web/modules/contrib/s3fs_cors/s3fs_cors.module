@@ -1,0 +1,73 @@
+<?php
+
+/**
+ * @file
+ * Allow uploading of files directly to AmazonS3 via the browser using CORS.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Site\Settings;
+use Drupal\field\FieldConfigInterface;
+
+/**
+ * Implements hook_help().
+ */
+function s3fs_cors_help($path, $arg) {
+  if ($path == 'admin/config/media/s3fs/cors') {
+    $msg = t("Configure your S3 Bucket's CORS configuration from this page.
+      Please be aware that submitting this form will <b>overwrite</b> your bucket's current CORS config.<br>
+      So if you intend to configure your bucket's CORS policy manually, <b>never submit this form</b>."
+    );
+    return "<p>$msg</p>";
+  }
+}
+
+/**
+ * Implements hook_field_info_alter().
+ *
+ * Use a custom class to override the file field class by extending it to allow
+ * larger file sizes when the upload is to AWS S3. Images are not being treated
+ * similarly at this time.
+ */
+function s3fs_cors_field_info_alter(array &$info) {
+
+  // Override the default file field class with a custom version.
+  $info['file']['class'] = '\Drupal\s3fs_cors\Plugin\Field\FieldType\S3fsCorsFileItem';
+
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Remove the S3 Cors widget option from file or image fields that are not
+ * using S3 storage.
+ */
+function s3fs_cors_form_entity_form_display_edit_form_alter(&$form, FormStateInterface $form_state) {
+
+  $entity_type = $form['#entity_type'];
+  $bundle = $form['#bundle'];
+  $entityManager = Drupal::service('entity_field.manager');
+  $field_definitions = $entityManager->getFieldDefinitions($entity_type, $bundle);
+  $s3_public = Settings::get('s3fs.use_s3_for_public');
+  $s3_private = Settings::get('s3fs.use_s3_for_private');
+  foreach ($form['#fields'] as $field) {
+    $field_definition = $field_definitions[$field];
+    if ($field_definition instanceof FieldConfigInterface) {
+      /** @var \Drupal\field\Entity\FieldConfig $field_definition */
+      $field_type = $field_definition->get('field_type');
+      if ($field_type == 'file' || $field_type == 'image') {
+        /** @var \Drupal\field\Entity\FieldStorageConfig $field_storage */
+        $field_storage = $field_definition->getFieldStorageDefinition();
+        $uri_scheme = $field_storage->getSetting('uri_scheme');
+        if ($uri_scheme == 's3' ||
+          ($uri_scheme == 'public' && $s3_public) ||
+          ($uri_scheme == 'private' && $s3_private)) {
+          continue;
+        }
+        $widget = 's3fs_cors_' . $field_type . '_widget';
+        unset($form['fields'][$field]['plugin']['type']['#options'][$widget]);
+      }
+    }
+  }
+
+}

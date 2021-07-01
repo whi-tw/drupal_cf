@@ -1,0 +1,12 @@
+---
+applications:
+  - name: lgdrupal_web
+    buildpacks:
+      - php_buildpack
+    services:
+      - name: drupal_db
+      - name: drupal_redis
+      - name: drupal_es
+      - name: lgdrupal_s3
+        parameters:
+          permissions: read-write

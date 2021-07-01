@@ -1,0 +1,6 @@
+vendor/
+connect.php
+LICENSE
+phpcs.xml.dist
+phpstan.neon
+README.md

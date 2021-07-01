@@ -1,0 +1,29 @@
+s3fs_cors.settings:
+  type: config_object
+  mapping:
+    s3fs_cors_origin:
+      type: string
+      label: 'CORS Origin'
+    s3fs_https:
+      type: string
+      label: 'Use Https/Http'
+    s3fs_access_type:
+      type: string
+      label: 'Access Type on File Uploads'
+    s3fs_sts_policy_resource:
+      type: string
+      label: 'STS Policy Resource'
+
+field_widget_settings_base_s3fs_cors_file:
+  type: field.widget.settings.file_generic
+  label: 'S3 file format settings'
+  mapping:
+    max_filesize:
+      type: string
+      label: 'Maximum upload size'
+
+field.widget.settings.s3fs_cors_file_widget:
+  type: field_widget_settings_base_s3fs_cors_file
+
+field.widget.settings.s3fs_cors_image_widget:
+  type: field_widget_settings_base_s3fs_cors_file
